@@ -19,7 +19,9 @@ def filtrar_dados_paraiba(df):
 
 def selecionar_colunas(df):
     
-    colunas = ['NO_ENTIDADE', 'NO_REGIAO', 'CO_UF', 'NO_MUNICIPIO', 'NO_MESORREGIAO', 'NO_MICRORREGIAO']
+    colunas = ['NO_ENTIDADE','NO_REGIAO', 'CO_UF', 'NO_MUNICIPIO', 'NO_MESORREGIAO', 'NO_MICRORREGIAO', 
+    'QT_MAT_BAS','QT_MAT_INF','QT_MAT_FUND','QT_MAT_FUND_AF','QT_MAT_MED','QT_MAT_PROF','QT_MAT_EJA',
+    'QT_MAT_ESP']
     return df[colunas]
 
 def salvar_json(dados, censo):
